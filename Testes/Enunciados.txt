@@ -1,0 +1,53 @@
+Escreva um programa que modele um sistema de entrega de pedidos usando Java.Cada pedido no sistema é representado por um objeto Order.O programa deve usar Java collections para gerir os pedidos
+Cada pedido deve conter os seguntes requesitos
+
+Identificador unico(int)- deve ser automatico incremental
+Composição do pedido (lista de item)
+Identificador de loja(String)
+Identificador de loja(String)
+Data e hora do pedido (LocalDataTime)
+Pedido expresso (Bollean)
+
+O programa deve incluir as seguintes classes e interfaces
+
+Order: é a classe principal dos pedidos .Estaclasse deve ter os atributos mencionados acima, um contrutor, função too string e os setters e getters apropriados, Deve ainda fornecer um metodo que devolve o valor total do pedido
+
+
+Item: classe que representa de forma simples artgios que podem compor um pedido. Consiste num nome (sTRING) E PREÇO (DOUBLE).
+
+OrderCosCalculator Uma interface que define o comportamento dos objetos que podem calcular o custo de pedidos.Deve conter o seguinte metodo: calculateOrderCOst(Order order:Retorna o custode envio de um pacote em especifico
+
+
+StandartOrderCostCalculator : Uma classe que implementa a interface OrderCostCalculator. O custo do pedido corresponde a soma dos preços dos artigos.No caso de pedidos expresso existe um acrescimo de 30% sobre o valor total
+
+
+Order Manager: Uma classe que gere os pedidos.A classe deve usar JavaColledctions para guardar e gerir os pedidos. A classe deve oferecer os segintes metodos:
+
+addOrder(Order order):Adiciona um novo pedido ao sistema
+
+remeveOrder(Order order):Remove um pedido do sistema usando o identificador pedido
+
+searchOrder(int id): procura um pedido  no sistema com base no identificador. Retorna o pedido ou null se o pedido nao existir
+
+calculateOrderCost(int id) Calcula e returna o custo dos pedidos usando a StandartOrderCostCalculator. No caso de nao existir pedido retorna -1
+
+printAllOrders: Imprime a informaçao de todos os pedidos que estao no sistema
+
+
+O progrma deve incluir uma função main na classe Ordertester que demonstra o uso da classe OrderManager com as seguintes tarefas:
+
+Cria uma nova instancia de OrderManager
+Adiciona pedidos ao sistema
+Remove pedidos ao sistema
+Le a partir de um ficheiro os dados referentes a varios pedidos(O programa deve ser capaz de ler o ficherio pedidos.txt)
+Procura um pedido especifico
+Imprime a informaçao de todos os pedidos do sistema
+Calcula o custo de um certo pedido
+Calcula o custo de todos os pedidos de um mes
+
+Imprime para um ficheiro a lista dos pedidos existentes no OrderManager, o ficheiro deve ter os dados separados por ";" e ter em cada linha a seguinte informação para cada pedido:
+Identificador do cliente
+Identificador da loja
+Composição do pedido formatado("nome_artigo:preço|nome_artigo:preço")
+Data e hora do pedido
+Tipo de pedido: "Expresso ou normal

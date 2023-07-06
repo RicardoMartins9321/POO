@@ -1,0 +1,54 @@
+Universidade de Aveiro - DETI
+31/maio/2023
+1. [15] Tendo por base o programa fornecido (POO2223.java), considere as seguintes entidades que fazem
+parte de um serviço de gestão de espaços para campismo e caravanismo:
+
+	CampingSpace: espaço para campismo/caravanismo; cada CampingSpace é representado pela
+localização, dimensões em centímetros (largura, comprimento) e preço por dia; existem três tipos
+de CampingSpace, com diferente duração máxima do aluguer: 3 anos (3*365 dias) para
+CaravanSpace, 3 meses (3*30 dias) para CarSpace, e 10 dias para TentSpace;
+	Booking: aluguer, associado a um espaço de campismo/caravanismo, uma data de início e uma data de fim;
+	Client: cliente, representado por número de contribuinte, nome e tipo (sócio ou normal);
+	CampingService: modela a empresa fornecedora do serviço; é representada por nome e endereço; 
+deve implementar a interface CampingServicelnterface que é fornecida.
+
+	Considere também que: CampingService mantém uma lista de espaços para campismo e caravanismo e uma lista de clientes;
+
+Programação Orientada a Objetos - Exame Prático
+Duração: 120min
+
+Alínea 1)
+
+	CampingService mantém um registo de alugueres (Booking) associados a clientes (cada cliente pode ter uma lista de alugueres);
+apenas os clientes de tipo sócio podem alugar espaços para caravana (CaravanSpace).
+Represente adequadamente estas entidades, tendo em atenção os princípios de programação orientada a
+objetos. Crie construtores, os métodos set/get que lhe pareçam adequados, bem como métodos e override
+de métodos que sejam fundamentais para cada classe/interface.
+
+Teste as classes desenvolvidas usando o programa fornecido e procurando reproduzir o seguinte output:
+** Could not book Caravan space for client João Sousa [NORMAL: 123456789].
+** Could not book Car space for client Ana Pereira [NORMAL: 234567890].
+**All client bookings
+Arlindo Marques [MEMBER: 501234567] - [2023-06-01 : 2023-11-28] Caravan space located in Costa
+Nova, with dimension 300x400, 60.00/day, total cost 10800.00
+João Sousa [NORMAL: 123456789] [2023-06-01 : 2023-08-30] Car space located in Costa Nova,
+with dimension 280x400, 40.00/day, total cost 3600.00
+Ana Pereira [NORMAL: 234567890] [2023-08-01 : 2023-09-30] Car space located in Costa Nova,
+with dimension 250x350, 30.00/day, total cost 1800.00
+
+
+2. [5] Adicione no método alinea2 a possibilidade de ler os pedidos de aluguer a partir de um ficheiro de texto
+("bookings.txt"). O ficheiro apresenta a seguinte estrutura:
+# Fields
+# Client tax id; rental start date; rental duration; type of camping space; minimum dimensions
+123456789;2023-06-01;150; CARAVAN; 250x350
+501234567; 2023-06-05; 40; CAR; 250x400
+As linhas começadas pelo caracter '#' devem ser ignoradas.
+As restantes linhas contêm os seguintes campos, separados por ";":
+1. número de contribuinte
+2. data de início para o aluguer
+3. duração do aluguer, em dias
+4. tipo de espaço de campismo/caravanismo, com valores CARAVAN, CAR, TENT
+5. dimensões, no formato larguraxcomprimento
+Construa ainda as funções utilizadas no final do método alinea2 (note que os nomes são sugestivos da
+funcionalidade pretendida; verifique ainda a saída seguinte).

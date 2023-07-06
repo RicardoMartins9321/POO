@@ -1,0 +1,48 @@
+
+Alínea 1) ----------------------------------
+
+** Could not book CARAVAN space for client João Sousa [NORMAL: 123456789].
+** Could not book CAR space for client Ana Pereira [NORMAL: 234567890].
+
+** All client bookings
+Arlindo Marques [MEMBER: 501234567] - [2023-06-01 : 2023-11-28] Caravan space located in Costa Nova, with dimensions 300x400, 60.00/day, total cost: 10800.00
+João Sousa [NORMAL: 123456789] - [2023-06-01 : 2023-08-30] Car space located in Costa Nova, with dimensions 280x400, 40.00/day, total cost: 3600.00
+Ana Pereira [NORMAL: 234567890] - [2023-08-01 : 2023-09-30] Car space located in Costa Nova, with dimensions 250x350, 30.00/day, total cost: 1800.00
+
+
+Alínea 2) ----------------------------------
+
+** Could not book CARAVAN space for client João Sousa [NORMAL: 123456789]
+** Client is not registered.
+** No options available for the type, dimensions, and dates requested.
+** Client is not registered.
+** No options available for the type, dimensions, and dates requested.
+
+Dunas, São Jacinto: Finished reading file.
+
+
+Looking for car space with dimensions 300x600
+** No options available for the type, dimensions, and dates requested.
+
+Looking for car space with dimensions 300x400
+** No options available for the type, dimensions, and dates requested.
+
+
+
+Dunas, São Jacinto: AVAILABLE SPACES BY AREA
+Car space located in Costa Nova, with dimensions 300x450, 45.00/day
+Car space located in Costa Nova, with dimensions 280x400, 40.00/day
+Car space located in Costa Nova, with dimensions 250x350, 30.00/day
+Tent space located in Costa Nova, with dimensions 200x350, 20.00/day
+Tent space located in Costa Nova, with dimensions 200x350, 20.00/day
+Tent space located in Costa Nova, with dimensions 200x350, 20.00/day
+Tent space located in Costa Nova, with dimensions 200x350, 20.00/day
+Tent space located in Costa Nova, with dimensions 200x350, 20.00/day
+Tent space located in Costa Nova, with dimensions 200x350, 20.00/day
+Tent space located in Costa Nova, with dimensions 150x200, 10.00/day
+Tent space located in Costa Nova, with dimensions 150x200, 10.00/day
+Tent space located in Costa Nova, with dimensions 150x200, 10.00/day
+Tent space located in Costa Nova, with dimensions 150x200, 10.00/day
+Tent space located in Costa Nova, with dimensions 150x200, 10.00/day
+Tent space located in Costa Nova, with dimensions 150x200, 10.00/day
+

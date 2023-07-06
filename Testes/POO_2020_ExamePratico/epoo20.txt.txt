@@ -1,0 +1,13 @@
+EP - Exame Prato) (3/06/2020) - Google Chrome elearning.ua.pt/rnod/quiziattempt.php?attempt=614653&cmid=755716 
+01 X 
+1. [15] Tendo por base o programa fornecido (P001920EN.java), considere as seguintes entidades que fazem parte de uma Loja online: 
+• Produto, caracterizado por urn codigo (String), quantidade (inteiro) e preco base sem impostos em Euros (double). 0 codigo de urn produto comeca por uma tetra mai6scula, a primeira do tipo de produto (ex: L para Livro), e contern urn nignero inteiro par diferente para cada produto, atribuido de forma sequencial; 
+• Existem os seguintes tipos de produtos: 
+• Livro, caracterizado ainda pelo titulo (String) e urn conjunto de Autores, que nao podem ser repetidos; 
+• Docurnentario, caracterizado por titulo (String), ano (inteiro) e duracao em minutos (inteiro); 
+• Telemovel, caracterizado ainda por marca (String), modelo (String) e uma lista de notas (nao se podem repetir)(String); Electrodomestico, caracterizado por tipo de Electrodomestico (String), marca (String) e modelo (String), classe energetica (A,B,C, ...) e potencia (double). 
+
+• Todos os produtos devem implementar a Interface PVP (Preco de venda ao piliblico) corn o metodo double precoVendaAoPublico()— que calcula o valor correspondente prego base + IVA. • Autor, caracterizado por nome e ano de nascimento. • Loja, caracterizada por nome (String), endereco web (String) e um conjunto de Produtos em stock, nao repetidos e sempre ordenados pelo seu codigo. Adicionalmente deve ser possivel aceder a urn produto atraves da sua descricao (composta por: marca e modelo para Telemovel; tipo, marca e modelo para Electrodomestico; titulo para os livros e outran classes). • Considere que aos livros se aplica IVA a 6% e que para os restantes é de 23%. 
+Represente adequadamente estas entidades. Crie construtores, os metodos set/get que the parecam adequados, bem como metodos que sejam fundamentals para cada classe/interface. Teste as classes desenvolvidas usando o programa fornecido e procurando reproduzir o seguinte output: 
+Alines 1) 
+Livro 1 tem 4 autores Livro 2 tem 3 autores TOTAL DE PRODUTOS DO MERCADO: 0 Descrigao de electrl :Frigorifico:Bosch/XPTO AUTORES DE Livro 1: [Autor 1 (2000-), Autor 2 (2000-), Autor 3 (2010-), Autor 4 (2018-)] TOTAL DE PRODUTOS DO MERCADO: 562 Unidades insuficientes! so tem 3 em stock. Vendidos 100unidades de .Livro 2". Passou a ter 351 MTTAC  rsm IIDDPRIN^. 
