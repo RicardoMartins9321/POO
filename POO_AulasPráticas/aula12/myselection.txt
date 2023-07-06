@@ -1,0 +1,3 @@
+{ name = 'Intolerable Cruelty', score = '67.1', rating = 'PG-13', genre = 'comedy', time = '100'}
+{ name = 'Deliver Us From Eva', score = '61.8', rating = 'R', genre = 'comedy', time = '105'}
+{ name = 'Matchstick Men', score = '68.9', rating = 'PG-13', genre = 'comedy', time = '116'}

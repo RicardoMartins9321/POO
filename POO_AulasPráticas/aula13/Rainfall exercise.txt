@@ -1,0 +1,146 @@
+O programa lê dados do ficheiro rainfall_data.csv, que tem o seguinte formato:
+
+date,location,rainfall
+2022-01-01,Lisboa,6.23
+2022-01-01,Porto,8.14
+Cada linha tem uma data, um local e uma medida de precipitação (chuva). Esta informação pode ser guardada em objetos da classe RainfallInfo.
+
+Implemente as seguintes operações no código:
+
+1. Complete a função loadData para ler o ficheiro e devolver os dados numa lista de objetos RainfallInfo. A função deve devolver null se o cabeçalho não contiver a palavra rainfall.
+
+2. Complete a função printLocationData para selecionar e escrever os dados de precipitação de um dado local.
+
+3. Complete a função totalPerMonth para calcular e guardar num mapa, o total de precipitação em cada mês.
+
+4. Complete a função printMapSorted para escrever o resultado da função anterior com os meses por ordem cronológica.
+
+
+RainfallInfo.java file
+
+import java.time.localDate;
+
+public class RainfallInfo {
+   private LocalDate date;
+   private String location;
+   private double rainfall;
+
+   public RainfallInfo(LocalDate date, String location, double rainfall) {
+      this.date = date;
+      this.location = location;
+      this.rainfall = rainfall;
+   }
+
+   public LocalDate date() { return date; }
+   public String location() { return location; }
+   public double rainfall() { return rainfall; }
+
+@Override
+   public int hashCode() {
+      return date.hashCode() | location.hashCode() | Double.hashCode(rainfall);
+   }
+}
+
+RainfallTest.java
+
+import java.io.IOException;
+import java.io.IOError;
+import java.time.LocalDate;
+import java.time.Month;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+import java.io.FileReader;
+
+public class RainfallTest {
+
+   public static List<RainfallInfo> loadData(String filePath) {
+      List<RainfallInfo> data = null;
+      try {
+		// 1) Read the file and add RainfallInfo objects to a list.
+         	data = null; // CHANGE THIS!...
+
+	} catch (Exception e) {
+         throw new IOError(e.getCause()); // repackage as error
+      }
+      return data;
+   }
+   
+   public static String printLocationData(List<RainfallInfo> data, String loc) {
+      System.out.printf("Rainfall for location %s:\n", loc);
+	// 2) Print rainfall values for the given location
+
+	return "";
+   }
+
+   public static Map<Month, Double> totalPerMonth(List<RainfallInfo> data) {
+	// 3) Calculate and return a map with the total rainfall per month
+      
+      return null;  // CHANGE THIS!
+	}
+
+   public static String printMapSorted(Map<Month, Double> map) {
+	// 4) Print map sorted by key
+
+	return "";
+   }
+	
+	// YOU MAY ADD METHODS HERE
+
+
+public static String main() {
+      Test.lst = null; Test.map = null;
+
+      // Load the file data to the list
+      List<RainfallInfo> rainfallData = loadData("rainfall_data.csv");
+      System.out.printf("Data size: %d\n", rainfallData.size());
+      System.out.printf("Data hash: %d\n", rainfallData.hashCode());
+      System.out.println();
+
+      // Show data for a single town
+      printLocationData(rainfallData, "Braga");
+      System.out.println();
+
+      // Find total rainfall per month
+      Map<Month, Double> rainfallPerMonth = totalPerMonth(rainfallData);
+
+      // Print sorted results
+      printMapSorted(rainfallPerMonth);
+
+      return "";
+   }
+
+   public static void main(String[] args) {
+      main();
+   } 
+}
+
+class Test {
+   // Variables used in unit tests (DON'T USE IN YOUR IMPLEMENTATION!):
+   private static LocalDate[] dates = {
+      LocalDate.parse("2023-03-02"),
+      LocalDate.parse("2023-04-17"),
+      LocalDate.parse("2023-05-27"),
+   };
+    
+   static List<RainfallInfo> lst = new ArrayList<>();
+
+   static Map<Month, Double> map = new HashMap<>();
+
+   static {
+      lst.add(new RainfallInfo(dates[2], "Aveiro", 2.2));
+      lst.add(new RainfallInfo(dates[1], "Braga", 3.0));
+      lst.add(new RainfallInfo(dates[0], "Aveiro", 0.0));
+      lst.add(new RainfallInfo(dates[2], "Braga", 4.0));
+      lst.add(new RainfallInfo(dates[1], "Aveiro", 1.1));
+
+      map.put(Month.JULY, 7.7);
+      map.put(Month.MAY, 5.5);
+      map.put(Month.JUNE, 6.6);
+      map.put(Month.MARCH, 3.3);
+   }
+}
